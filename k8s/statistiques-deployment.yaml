@@ -1,0 +1,34 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: statistiques-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: statistiques
+  template:
+    metadata:
+      labels:
+        app: statistiques
+    spec:
+      containers:
+      - name: statistiques
+        image: mohamedyenge/statistiques:latest
+        ports:
+        - containerPort: 5001
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: statistiques-service
+spec:
+  selector:
+    app: statistiques
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5001
+  type: NodePort
+
