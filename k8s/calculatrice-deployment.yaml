@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - name: calculatrice
-        image: mohamedyenge/calculatrice:latest
+        image: calculatrice:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
 ---

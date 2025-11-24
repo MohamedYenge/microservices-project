@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - name: statistiques
-        image: mohamedyenge/statistiques:latest
+        image: statistiques:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5001
 ---
