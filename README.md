@@ -100,9 +100,10 @@ pipeline {
     }
 }
 
-![ci-cd.png](https://github.com/MohamedYenge/microservices-project/blob/main/ci-cd.png?raw=true)
+![Pods Monitoring](https://github.com/MohamedYenge/microservices-project/blob/main/ci-cd.png?raw=true)
 
-![dashbord](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png?raw=true)
+![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashboard.png?raw=true)
+
 
 
 
