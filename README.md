@@ -100,7 +100,12 @@ pipeline {
     }
 }
 
-![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/Screenshot (698).png)
+### 1. Pods en fonctionnement
+![Pods Monitoring](https://github.com/MohamedYenge/microservices-project/blob/main/Screenshot%20(698).png?raw=true)
+
+### 2. Dashboard Grafana
+![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/Screenshot%20(707).png?raw=true)
+
 
 
 
