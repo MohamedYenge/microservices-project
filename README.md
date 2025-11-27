@@ -101,8 +101,9 @@ pipeline {
 }
 #
 
-![CI/CD Pipeline](https://github.com/MohamedYenge/microservices-project/blob/main/ci-cd.png?raw=true)
-![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashboard.png?raw=true)
+![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png?raw=true)
+#![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashboard.png?raw=true)
+
 
 
 
