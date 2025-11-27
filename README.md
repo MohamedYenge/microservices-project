@@ -101,8 +101,8 @@ pipeline {
 }
 
 
-<img src="https://github.com/user-attachments/assets/4875401b-6eb8-42d5-8851-5a8d5a310fa9" alt="Pods monitoring Running" width="100%"/>
+![Pods monitoring en Running](https://github.com/user-attachments/assets/4875401b-6eb8-42d5-8851-5a8d5a310fa9)
 
 ### 2. Interface Grafana fonctionnelle (login admin/admin) – Dashboard Kubernetes ou FastAPI visible
-<img src="https://github.com/user-attachments/assets/8dcc47b6-0611-4034-9103-584504943cf5" alt="Grafana Dashboard" width="100%"/>
+![Grafana Dashboard](https://github.com/user-attachments/assets/8dcc47b6-0611-4034-9103-584504943cf5)
 
