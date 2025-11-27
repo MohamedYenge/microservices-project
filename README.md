@@ -60,7 +60,7 @@ Pipeline
 Docker Pipeline
 Kubernetes CLI
 
-
+c
 Créer un Pipeline Job et utiliser le Jenkinsfile :
 
 pipeline {
@@ -101,13 +101,12 @@ pipeline {
 }
 #
 
-### 1. CI/CD Pipeline
-![CI/CD Pipeline](https://raw.githubusercontent.com/MohamedYenge/microservices-project/main/ci-cd.png)
-#![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashboard.png?raw=true)
+creer [PodsMonitoring] (https://github.com/MohamedYenge/microservices-project/blob/main/ci-cd.png)
+![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png)
 
 
 
-
+click [here](https://github.com/MohamedYenge/microservices-project/blob/main/ci-cd.png)
 
 
 
