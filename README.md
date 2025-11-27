@@ -100,13 +100,7 @@ pipeline {
     }
 }
 #
-
-creer [PodsMonitoring] (https://github.com/MohamedYenge/microservices-project/blob/main/ci-cd.png)
-![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png)
-
-
-
-click [here](https://github.com/MohamedYenge/microservices-project/blob/main/ci-cd.png)
+[Voir l’image](https://drive.google.com/file/d/1RSFuKSuHr7I1LO8hwjp9uEygUzE_KTTU/view)
 
 
 
