@@ -100,6 +100,7 @@ pipeline {
     }
 }
 
-![Grafana Dashboard](https://github.com/user-attachments/assets/8dcc47b6-0611-4034-9103-584504943cf5)
+![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/Screenshot (698).png)
+
 
 
