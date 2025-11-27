@@ -100,11 +100,10 @@ pipeline {
     }
 }
 
-### 1. Pipeline CI/CD
-![Pods Monitoring](https://github.com/MohamedYenge/microservices-project/blob/main/ci-cd.png?raw=true)
+![ci-cd](ci-cd.png?raw=true)
 
-### 2. Dashboard Grafana
-![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png?raw=true)
+![dashbord](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png?raw=true)
+
 
 
 
