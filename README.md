@@ -101,8 +101,9 @@ pipeline {
 }
 #
 
-![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png?raw=true)
+![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png)
 #![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashboard.png?raw=true)
+
 
 
 
