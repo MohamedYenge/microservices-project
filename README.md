@@ -45,6 +45,9 @@ eval $(minikube docker-env)
 
 docker build -t calculatrice:latest ./calculatrice
 docker build -t statistiques:latest ./statistiques
+## Docker composer
+docker compose up -d
+docker compose down
 
 ##  Déployer sur Kubernetes
 
@@ -106,6 +109,7 @@ pipeline {
 # monotoring
   j'ai probleme d'utiliser grafana et promeutheus ,donc je choisis minikube dasbord
 ![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png)
+
 
 
 
