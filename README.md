@@ -59,7 +59,7 @@ EOF
 # install docker
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
- ![docker version](https://drive.google.com/drive/folders/1DLCYYNiqsoWqmnkadUxK2elwioaCsyHe)
+ ![docker version](https://github.com/MohamedYenge/microservices-project/blob/main/Screenshot%20(716).png)
  -installer docker compose:
  ```bash
       sudo apt-get update
@@ -139,6 +139,7 @@ pipeline {
 # monotoring
   j'ai probleme d'utiliser grafana et promeutheus ,donc je choisis minikube dasbord
 ![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png)
+
 
 
 
