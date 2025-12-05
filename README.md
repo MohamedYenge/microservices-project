@@ -70,6 +70,43 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
       docker compose up -d
 ```
  ![docker composes version](https://github.com/MohamedYenge/microservices-project/blob/main/Screenshot%20(684).png)
+
+# install Kubernets
+```bash
+#  instal minikube:
+    sudo apt update
+    curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+    sudo dpkg -i minikube_latest_amd64.deb
+    curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+    chmod +x kubectl
+    sudo mv kubectl /usr/local/bin/
+# Disable Swap:
+    minikube start
+    sudo swapoff -a
+    sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+
+    # Add Kubernetes APT Repository:
+    
+        sudo apt update
+        sudo apt install -y apt-transport-https ca-certificates curl
+        curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.29/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+        echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.29/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+        sudo apt update
+
+   # Install Kubeadm, Kubelet, and Kubectl:
+
+
+        sudo apt install -y kubelet kubeadm kubectl
+        sudo apt-mark hold kubelet kubeadm kubectl
+   # Initialize Control Plane Node.
+
+    sudo kubeadm init --pod-network-cidr=<your_pod_network_cidr> **// (Replace <your_pod_network_cidr> with a suitable CIDR, e.g., 10.244.0.0/16 for Flannel.) Configure Kubectl on Control Plane.**
+
+# Install Network Plugin (on Control Plane).   Choose a network plugin (e.g., Flannel, Calico) and follow its installation instructions. For Flannel:
+    mkdir -p $HOME/.kube
+    sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+    sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
 ###  **Construire les images Docker localement**
 Assurez-vous que Minikube est démarré :
 ```bash
@@ -148,6 +185,7 @@ pipeline {
 # monotoring
   j'ai probleme d'utiliser grafana et promeutheus ,donc je choisis minikube dasbord
 ![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png)
+
 
 
 
