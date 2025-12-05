@@ -105,6 +105,37 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
     sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
     sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
+```bash
+# Step 1: Update System & Install Java
+
+sudo apt update
+sudo apt install openjdk-17-jdk # Or openjdk-11-jdk
+
+# Step 2: Add Jenkins Repository
+# Import GPG key
+  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+     /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+
+# Add Jenkins repository to sources list
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+# Step 3: Install Jenkins
+
+sudo apt update
+sudo apt install jenkins -y
+
+# Step 4: Start and Enable Jenkins Service
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+sudo systemctl status jenkins # Verify it's running (look for 'active (running)') [7, 11]
+
+# Step 5: Access Jenkins in Browser & Unlock
+Open your browser and navigate to http://your_server_ip_or_domain:8080.
+
+# Get the initial admin password:
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
 ###  **Construire les images Docker localement**
 Assurez-vous que Minikube est démarré :
 ```bash
@@ -183,6 +214,7 @@ pipeline {
 # monotoring
   j'ai probleme d'utiliser grafana et promeutheus ,donc je choisis minikube dasbord
 ![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png)
+
 
 
 
