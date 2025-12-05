@@ -66,7 +66,8 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
       sudo apt-get install docker-compose-plugin
       docker compose version
       docker compose up -d
-       ```
+```
+ ![docker composes version](https://github.com/MohamedYenge/microservices-project/blob/main/Screenshot%20(684).png)
 ###  **Construire les images Docker localement**
 Assurez-vous que Minikube est démarré :
 ```bash
@@ -139,6 +140,7 @@ pipeline {
 # monotoring
   j'ai probleme d'utiliser grafana et promeutheus ,donc je choisis minikube dasbord
 ![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png)
+
 
 
 
