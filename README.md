@@ -79,15 +79,16 @@ docker build -t statistiques:latest ./statistiques
 ## Docker composer
 docker compose up -d
 docker compose down
-
+```
 ##  Déployer sur Kubernetes
-
+```bash
 kubectl apply -f k8s/
 kubectl get pods
 kubectl get svc
-
+```
+![k8s apply](https://github.com/MohamedYenge/microservices-project/blob/main/Screenshot%20(694).png)
 ## Configurer Jenkins (Pipeline local)
-
+```bash
 ## Installer Jenkins et les plugins :
 
 Pipeline
@@ -140,6 +141,7 @@ pipeline {
 # monotoring
   j'ai probleme d'utiliser grafana et promeutheus ,donc je choisis minikube dasbord
 ![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png)
+
 
 
 
