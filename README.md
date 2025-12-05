@@ -140,11 +140,13 @@ pipeline {
 }
 ```
 # CI/DI avec Jenkis
+![jenkis script](https://github.com/MohamedYenge/microservices-project/blob/main/Screenshot%20(697).png)
 ![Pods Monitoring](https://github.com/MohamedYenge/microservices-project/blob/main/ci-cd.png)
 
 # monotoring
   j'ai probleme d'utiliser grafana et promeutheus ,donc je choisis minikube dasbord
 ![Grafana Dashboard](https://github.com/MohamedYenge/microservices-project/blob/main/dashbord.png)
+
 
 
 
