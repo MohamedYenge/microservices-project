@@ -4,6 +4,11 @@ import statistics
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return jsonify({"status": "Service Calculatrice OK"})
+
+
 @app.route('/mean', methods=['POST'])
 def mean():
     data = request.get_json()
