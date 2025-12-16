@@ -26,12 +26,12 @@ jobs:
       - name: Build and push Calculatrice
         run: |
           docker build -t ghcr.io/${{ github.repository_owner }}/calculatrice:latest ./calculatrice
-          docker push ghcr.io/${{ github.repository_owner }}/calculatrice:latest
+          docker push ghcr.io/${{ github.repository_owner }}/calculatrice:dev
 
       - name: Build and push Statistiques
         run: |
           docker build -t ghcr.io/${{ github.repository_owner }}/statistiques:latest ./statistiques
-          docker push ghcr.io/${{ github.repository_owner }}/statistiques:latest
+          docker push ghcr.io/${{ github.repository_owner }}/statistiques:dev
 
   deploy:
     runs-on: ubuntu-latest
@@ -52,8 +52,8 @@ jobs:
 
       - name: Update manifests with GHCR images
         run: |
-          sed -i 's|image: calculatrice:dev|image: ghcr.io/${{ github.repository_owner }}/calculatrice:latest|' k8s/calculatrice-deployment.yaml
-          sed -i 's|image: statistiques:dev|image: ghcr.io/${{ github.repository_owner }}/statistiques:latest|' k8s/statistiques-deployment.yaml
+          sed -i 's|image: calculatrice:dev|image: ghcr.io/${{ github.repository_owner }}/calculatrice:dev|' k8s/calculatrice-deployment.yaml
+          sed -i 's|image: statistiques:dev|image: ghcr.io/${{ github.repository_owner }}/statistiques:dev|' k8s/statistiques-deployment.yaml
 
       - name: Deploy to Kubernetes
         run: |
