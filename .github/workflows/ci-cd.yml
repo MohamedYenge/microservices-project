@@ -25,12 +25,12 @@ jobs:
 
       - name: Build and push Calculatrice
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/calculatrice:latest ./calculatrice
+          docker build -t ghcr.io/${{ github.repository_owner }}/calculatrice:dev ./calculatrice
           docker push ghcr.io/${{ github.repository_owner }}/calculatrice:dev
 
       - name: Build and push Statistiques
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/statistiques:latest ./statistiques
+          docker build -t ghcr.io/${{ github.repository_owner }}/statistiques:dev ./statistiques
           docker push ghcr.io/${{ github.repository_owner }}/statistiques:dev
 
   deploy:
